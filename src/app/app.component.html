@@ -1,15 +1,6 @@
-<!-- <div class="min-h-screen min-w-full bg-slate-200 dark:bg-slate-700">
-  <div class="flex justify-between items-center bg-teal-600 text-white dark:bg-slate-900 p-5 font-semibold text-lg shadow-lg">
-    Dark mode with Angular and TailwindCSS
-    <button (click)="darkMode.set(!darkMode())" class="flex transition-transform hover:scale-125 align-middle">
-      <span *ngIf="!darkMode()" class="material-icons">dark_mode</span>
-      <span *ngIf="darkMode()" class="material-icons">light_mode</span>
-    </button>
-  </div>
-</div> -->
 <!-- Navbar -->
-<header class="absolute inset-x-0 top-0 z-50">
-  <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <app-header></app-header>
+  <nav class="absolute inset-x-0 top-0 z-50 flex items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
     </div>
     <div class="flex lg:hidden">
@@ -65,6 +56,7 @@
       </div>
     </div>
   </div>
-</header>
-<app-header></app-header>
-<router-outlet></router-outlet>
+  
+<div class="p-8 dark:bg-slate-900">
+  <router-outlet></router-outlet>
+</div>
