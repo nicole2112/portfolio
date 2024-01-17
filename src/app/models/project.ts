@@ -6,7 +6,7 @@ export interface Project {
     codeUrl: string;
 }
 
-interface ProjectImage {
+export interface ProjectImage {
     name: string;
     sourceUrl: string;
 }

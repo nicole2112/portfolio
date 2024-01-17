@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
+import { Project } from '../../models/project';
+import { projectsData } from '../../core/ProjectsData';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,6 +13,22 @@ import { ProjectModalComponent } from '../project-modal/project-modal.component'
 })
 export class PortfolioComponent {
 
-  public projects: Array<Number> = [1, 2, 3, 4, 5, 6];
+  projects: Array<Project> = projectsData;
+  selectedProject: Project = {
+    id: 0,
+    title: '',
+    description: '',
+    images: [ {name: '', sourceUrl: ''}],
+    codeUrl: ''
+  }
+
+  constructor() {
+  }  
+
+  openModal(project: Project): void {
+    this.selectedProject = project;
+    this.selectedProject.images = [...this.selectedProject.images];
+    console.log(this.selectedProject)
+  }
 
 }
