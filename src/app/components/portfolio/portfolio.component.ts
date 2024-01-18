@@ -18,7 +18,7 @@ export class PortfolioComponent {
     id: 0,
     title: '',
     description: '',
-    images: [ {name: '', sourceUrl: ''}],
+    images: [ ],
     codeUrl: ''
   }
 
@@ -27,8 +27,6 @@ export class PortfolioComponent {
 
   openModal(project: Project): void {
     this.selectedProject = project;
-    this.selectedProject.images = [...this.selectedProject.images];
-    console.log(this.selectedProject)
   }
 
 }
