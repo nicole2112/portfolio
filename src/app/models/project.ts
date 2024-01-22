@@ -3,7 +3,8 @@ export interface Project {
     title: string;
     description: string;
     images: Array<ProjectImage>;
-    codeUrl: string;
+    codeUrl?: string;
+    prodUrl?: string;
 }
 
 export interface ProjectImage {

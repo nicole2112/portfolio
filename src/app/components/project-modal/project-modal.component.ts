@@ -19,4 +19,12 @@ export class ProjectModalComponent implements AfterViewInit   {
     const carouselElement = this.el.nativeElement.querySelector('#projectCarousel');
     this.renderer.setProperty(carouselElement, 'carousel', {});  
   }
+
+  openCodeUrl(): void {
+    window.open(this.project.codeUrl, "_blank");
+  }
+
+  openProdUrl(): void {
+    window.open(this.project.prodUrl, "_blank");
+  }
 }
