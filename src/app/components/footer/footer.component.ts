@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faPhone, faComments, faEnvelope, faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faComments, faEnvelope, faMapMarker, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -16,4 +16,5 @@ export class FooterComponent {
   faEnvelope = faEnvelope;
   faMapMarker = faMapMarker;
   faLinkedin = faLinkedinIn;
+  faEllipsis = faEllipsisH;
 }
