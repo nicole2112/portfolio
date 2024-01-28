@@ -17,4 +17,8 @@ export class FooterComponent {
   faMapMarker = faMapMarker;
   faLinkedin = faLinkedinIn;
   faEllipsis = faEllipsisH;
+
+  openLinkedin(): void {
+    window.open("https://linkedin.com/in/nicole-rodriguez-708a12237", "_blank");
+  }
 }

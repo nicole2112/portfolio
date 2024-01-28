@@ -25,6 +25,10 @@ export class PortfolioComponent {
   constructor() {
   }  
 
+  get visibleProjects(): Project[] {
+    return this.projects.filter(project => !project.hidden);
+  }
+
   openModal(project: Project): void {
     this.selectedProject = project;
   }

@@ -5,6 +5,8 @@ export interface Project {
     images: Array<ProjectImage>;
     codeUrl?: string;
     prodUrl?: string;
+    order?: number;
+    hidden?: boolean;
 }
 
 export interface ProjectImage {
