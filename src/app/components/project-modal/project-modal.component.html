@@ -19,7 +19,7 @@
                 <!-- Images -->
                 <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators my-4">
                         <li *ngFor="let image of project?.images; let i = index" [class.active]="i === 0" [attr.data-bs-target]="'#projectCarousel'" [attr.data-bs-slide-to]="i"></li>
                     </ol>
 
@@ -27,7 +27,7 @@
                     <div class="carousel-inner">
                         <div *ngFor="let image of project?.images; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
                             <img [src]="image?.sourceUrl" class="d-block w-100" [alt]="'Image ' + (i + 1)">
-                            <div class="carousel-caption d-none d-md-block text-secondary">
+                            <div class="carousel-caption d-none d-md-block bg-secondary mb-4">
                                 <h5>{{image?.name}}</h5>
                             </div>
                         </div>
@@ -35,16 +35,15 @@
 
                     <!-- Slider controls -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <fa-icon [icon]="faChevronLeft" style="color:black; font-size: 2em; margin-left: -1em;"></fa-icon>                   
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <fa-icon [icon]="faChevronRight" style="color:black; font-size: 2em; margin-right: -1em; "></fa-icon>                   
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
                   
-
                 <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                     {{project.description}}
                 </p>

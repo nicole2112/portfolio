@@ -1,15 +1,21 @@
-import { AfterViewInit, Component, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges, ViewEncapsulation } from '@angular/core';
 import { Project, ProjectImage } from '../../models/project';
 import { CommonModule } from '@angular/common';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @Component({
   selector: 'app-project-modal',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FontAwesomeModule],
   templateUrl: './project-modal.component.html',
-  styleUrl: './project-modal.component.css'
+  styleUrl: './project-modal.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class ProjectModalComponent implements AfterViewInit   {
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
   
   @Input() project!: Project;
 

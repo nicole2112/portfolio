@@ -11,8 +11,8 @@ const images: Array<ProjectImage> = [
 const chartProjectImages: Array<ProjectImage> = [
     { name: 'Login', sourceUrl: '/assets/images-projects/chart2023/img1.png' },
     { name: 'Screen 1: Image Assignment', sourceUrl: '/assets/images-projects/chart2023/img2.png' },
-    { name: 'Screen 2: Image Annotation', sourceUrl: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg' },
-    { name: 'Screen 3: Image Validation', sourceUrl: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg' },
+    { name: 'Screen 2: Image Annotation', sourceUrl: '/assets/images-projects/chart2023/img3.png' },
+    { name: 'Screen 3: Image Validation', sourceUrl: '/assets/images-projects/chart2023/img4.png' },
 ]
 
 export const projectsData: Array<Project> = [

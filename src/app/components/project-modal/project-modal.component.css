@@ -1,0 +1,21 @@
+.carousel-control-prev-icon {
+    fill: #8C8A8A
+  }
+  
+  .carousel-control-next-icon {
+    color: #8C8A8A; 
+  }
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    .carousel-caption {
+        h5 {
+            font-size: 1rem;
+        }
+    }
+}
