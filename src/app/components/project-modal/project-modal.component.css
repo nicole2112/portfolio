@@ -1,3 +1,12 @@
+.tag {
+    background-color: #EEF; /* Set the background color */
+    border-radius: 6px;     /* Add some roundness */
+    padding: 2px 5px;
+    display: inline;
+    font-size: 12px;
+    margin: 1px;
+}
+
 .carousel-control-prev-icon {
     fill: #8C8A8A
   }
