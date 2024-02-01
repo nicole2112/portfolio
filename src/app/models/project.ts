@@ -7,6 +7,7 @@ export interface Project {
     prodUrl?: string;
     order?: number;
     hidden?: boolean;
+    tags?: Array<string>;
 }
 
 export interface ProjectImage {

@@ -15,10 +15,7 @@
                         <span class="sr-only">Close modal</span>
                     </button>
                 </div>
-                <span class="tag">Angular</span>
-                <span class="tag">.NET</span>
-                <span class="tag">React</span>
-                <span class="tag">Python</span>
+                <span *ngFor="let tag of project.tags" class="tag">{{tag}}</span>
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5 space-y-4">
