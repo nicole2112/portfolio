@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faPhone, faComments, faEnvelope, faMapMarker, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -17,8 +17,13 @@ export class FooterComponent {
   faMapMarker = faMapMarker;
   faLinkedin = faLinkedinIn;
   faEllipsis = faEllipsisH;
+  faGithub = faGithub;
 
   openLinkedin(): void {
     window.open("https://linkedin.com/in/nicole-rodriguez-708a12237", "_blank");
+  }
+
+  openGithub(): void {
+    window.open("https://github.com/nicole2112", "_blank");
   }
 }

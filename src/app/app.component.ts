@@ -18,6 +18,8 @@ export class AppComponent {
 
   darkMode = signal<boolean>(JSON.parse(window.localStorage.getItem('darkMode') ?? 'false'));
 
+  menuOpen: boolean = false;
+
   @HostBinding('class.dark') get mode(){
     return this.darkMode();
   }
@@ -26,5 +28,9 @@ export class AppComponent {
     effect(() => {
       window.localStorage.setItem('darkMode', JSON.stringify(this.darkMode()));
     });    
+  }
+
+  toggleMobileMenu(): void {
+    this.menuOpen = !this.menuOpen;
   }
 }
