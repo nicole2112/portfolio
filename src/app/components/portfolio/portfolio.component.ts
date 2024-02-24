@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
 import { Project } from '../../models/project';
 import { projectsData } from '../../core/ProjectsData';
@@ -25,7 +25,7 @@ export class PortfolioComponent {
   tags: Array<string> = ['All', 'Angular', '.NET', 'Firebase']
   selectedTags: { [key: string]: boolean } = {};
 
-  constructor() {
+  constructor(private el: ElementRef) {
     this.filteredProjects = this.projects;
     this.tags.forEach(tag => {
       this.selectedTags[tag] = false;
@@ -39,6 +39,7 @@ export class PortfolioComponent {
 
   openModal(project: Project): void {
     this.selectedProject = project;
+    const carouselElement = this.el.nativeElement.querySelector('#project-modal');
   }
 
   updateSelectedTags(tag: string) {
