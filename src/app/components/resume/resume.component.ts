@@ -10,6 +10,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 })
 export class ResumeComponent {
 
-  resumePdf = '/assets/resume/CV.pdf';
+  resumePdf = '/nicole2112/assets/resume/CV.pdf';
 
 }
