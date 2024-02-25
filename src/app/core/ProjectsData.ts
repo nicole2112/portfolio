@@ -9,21 +9,21 @@ const images: Array<ProjectImage> = [
 ]
 
 const chartProjectImages: Array<ProjectImage> = [
-    { name: 'Login', sourceUrl: '/nicole2112/assets/images-projects/chart2023/img1.png' },
-    { name: 'Screen 1: Image Assignment', sourceUrl: '/nicole2112/assets/images-projects/chart2023/img2.png' },
-    { name: 'Screen 2: Image Annotation', sourceUrl: '/nicole2112/assets/images-projects/chart2023/img3.png' },
-    { name: 'Screen 3: Image Validation', sourceUrl: '/nicole2112/assets/images-projects/chart2023/img4.png' },
+    { name: 'Login', sourceUrl: './assets/images-projects/chart2023/img1.png' },
+    { name: 'Screen 1: Image Assignment', sourceUrl: './assets/images-projects/chart2023/img2.png' },
+    { name: 'Screen 2: Image Annotation', sourceUrl: './assets/images-projects/chart2023/img3.png' },
+    { name: 'Screen 3: Image Validation', sourceUrl: './assets/images-projects/chart2023/img4.png' },
 ]
 
 const fundacionProjectImages: Array<ProjectImage> = [
-    { name: 'Landing page', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img1.png' },
-    { name: 'Landing page: Testimony', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img2.png' },
-    { name: 'Landing page: Contact', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img3.png' },
-    { name: 'Landing page: Blog', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img4.png' },
-    { name: 'Administrative login page', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img5.png' },
-    { name: 'Administrative heroes section management', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img6.png' },
-    { name: 'Administrative heroes sectio management', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img8.png' },
-    { name: 'Heroes Section', sourceUrl: '/nicole2112/assets/images-projects/fundaPadrino/img7.png' },
+    { name: 'Landing page', sourceUrl: './assets/images-projects/fundaPadrino/img1.png' },
+    { name: 'Landing page: Testimony', sourceUrl: './assets/images-projects/fundaPadrino/img2.png' },
+    { name: 'Landing page: Contact', sourceUrl: './assets/images-projects/fundaPadrino/img3.png' },
+    { name: 'Landing page: Blog', sourceUrl: './assets/images-projects/fundaPadrino/img4.png' },
+    { name: 'Administrative login page', sourceUrl: './assets/images-projects/fundaPadrino/img5.png' },
+    { name: 'Administrative heroes section management', sourceUrl: './assets/images-projects/fundaPadrino/img6.png' },
+    { name: 'Administrative heroes sectio management', sourceUrl: './assets/images-projects/fundaPadrino/img8.png' },
+    { name: 'Heroes Section', sourceUrl: './assets/images-projects/fundaPadrino/img7.png' },
 ]
 
 export const projectsData: Array<Project> = [
