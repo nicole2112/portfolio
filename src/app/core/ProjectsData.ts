@@ -1,7 +1,5 @@
 import { Project, ProjectImage } from "../models/project";
 
-const 
-
 const images: Array<ProjectImage> = [
     { name: 'Image 1', sourceUrl: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg' },
     { name: 'Image 2', sourceUrl: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg' },
